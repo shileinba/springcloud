@@ -1,0 +1,17 @@
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: localhost
+    ip-address: 127.0.0.1
+    lease-expiration-duration-in-seconds: 90
+    lease-renewal-interval-in-seconds: 30
+    prefer-ip-address: false
+server:
+  port: 2001
+spring:
+  application:
+    name: eureka-server
+  profiles:
+    active: dev

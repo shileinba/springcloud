@@ -1,0 +1,19 @@
+server:
+  port: 2004
+spring:
+  application:
+    name: consumer
+  profiles:
+    active: dev
+consumer:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:2001/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,12 @@
+*.class
+/.idea
+*.iml
+*.jar
+*.lst
+
+.idea/jarRepositories.xml
+
+# Build generated files
+target
+*~
+
